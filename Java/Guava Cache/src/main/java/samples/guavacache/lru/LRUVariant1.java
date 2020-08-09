@@ -125,14 +125,14 @@ public class LRUVariant1<K, V> {
         }
         
         System.out.println("\n\n*******************************************");
-        System.out.println("\n********* ADDING TO CACHE *****************\n");
-        final long producerStart = System.currentTimeMillis();
-        final List<Future<String>> producerHandles = producer.invokeAll(producerTasks);
-        System.out.println("*******************************************");
         System.out.println("\n\n********* RETRIEVING FROM CACHE ***********\n");
         final long consumerStart = System.currentTimeMillis();
         final List<Future<String>> consumerHandles = consumer.invokeAll(consumerTasks);
         System.out.println("\n*******************************************");
+        System.out.println("\n********* ADDING TO CACHE *****************\n");
+        final long producerStart = System.currentTimeMillis();
+        final List<Future<String>> producerHandles = producer.invokeAll(producerTasks);
+        System.out.println("*******************************************");
         
         
         producerHandles.forEach(handle -> {
