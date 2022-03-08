@@ -32,3 +32,14 @@
 * Would a hacker or malicioud user want to bypass authorization and attempt to elevate priviliges against this component?
 * Components that manage authorization will be more susceptible to this attack if they are not well designed.
 * ![](_resources/2022-03-06-13-09-13.png)
+
+
+# Standard controls
+|Thread Type | Standard Controls|
+|---|---|
+| Spoofing | Cookie Authentication, PKI or SSO Infra| 
+| Tampering | Input Validation, Digital Signatures SSL/TLS |
+| Repudiation | Logging and auditing Policies |
+| Information Disclosure | Encryption SSL/TLS Access Controls |
+| Denial of Service |  Firewall/IPS/IDS, Request or IP Filtering |
+| Elevation of Privilege | Access controls (RBAC), Input Validation, Separation of admin components |
