@@ -1,4 +1,2 @@
-# run-through-tech
-
-* [12 Factor App](https://github.com/harshchiki/run-through-tech/blob/master/System%20Design/12%20Factor%20App.md#12-factor-app)
-* [Code Comments](https://github.com/harshchiki/run-through-tech/blob/master/Code%20Comments.md)
+# DSA
+Coding problems compilation: https://docs.google.com/spreadsheets/d/1N90d1Xk2WJKEcdnLpP5tCEXnLvwDa3CslieCr7CFg9Y/edit?usp=sharing
