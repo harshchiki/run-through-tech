@@ -3,6 +3,7 @@ package easy;
 import java.util.HashMap;
 import java.util.Map;
 
+// https://leetcode.com/problems/two-sum
 public class TwoSum {
     public static void main(String[] args) {
         int[] nums = new int[]{15,11,7,2};
