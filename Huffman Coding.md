@@ -35,6 +35,13 @@ A 5 Code: 11 -> 10 bits
 C 6 Code: 0  -> 6 bits
 32 15          28 bits ==> total = 75 bits (instead of 120)
 
+## Important - Interpretation
+so the source string: BCAADDDCCACACAC
+will be encoded as
+100 0 10 10 101 101 101 0 0 10 0 10 0
+parsing the above, we will check the tree to get the char
+
+
 Basically, for Huffman encoding algo, 
 * for every 1 we traverse towards the right child and
 * for every 0 we traverse towards the left one
@@ -46,4 +53,5 @@ so for e.g. we need to decode 101 (which should decode to D).
 
 
 # Reference
+https://engineering.purdue.edu/ece264/17au/hw/HW13?alt=huffman
 https://www.topcoder.com/thrive/articles/huffman-coding-and-decoding-algorithm
