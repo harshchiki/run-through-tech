@@ -20,24 +20,16 @@ public class ValidateContinuousSubsequence {
             return false;
         }
 
-        String sequenceStr = "";
-        for(Integer n : sequence) {
-            sequenceStr += n + ",";
-        }
-        for(int i = 0;i<array.size() - sequence.size();i++) {
-            if(getSubseq(array, i, i+ sequence.size()-1).equals(sequenceStr)) {
-                return true;
+        int firstLength = array.size(), secondLength = sequence.size();
+        int firstPointer = 0 , secondPointer = 0;
+
+        while(firstPointer < firstLength && secondPointer < secondLength) {
+            if(array.get(firstPointer) == sequence.get(secondPointer)) {
+                secondPointer++;
             }
+            firstPointer++;
         }
 
-        return false;
-    }
-
-    private static String getSubseq(List<Integer> array, int start, int end) {
-        String seq = "";
-        for(int i = start;i<end && i<array.size();i++) {
-            seq += array.get(i) + ",";
-        }
-        return seq;
+        return secondPointer == secondLength;
     }
 }
