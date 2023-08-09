@@ -6,8 +6,8 @@ import java.util.Map;
 // https://leetcode.com/problems/two-sum
 public class TwoSum {
     public static void main(String[] args) {
-        int[] nums = new int[]{15,11,7,2};
-        int target = 9;
+        int[] nums = new int[]{14};
+        int target = 15;
         int[] result = new TwoSum().twoSum(nums, target);
         for(int i = 0; i < result.length; i++) {
             System.out.println(result[i]);
@@ -20,16 +20,15 @@ public class TwoSum {
         for(int i = 0; i< nums.length; i++) {
             map.put(Integer.valueOf(nums[i]), Integer.valueOf(i));
         }
-
         for(int i = 0; i < nums.length;i++) {
             int lookupNum = target - nums[i];
             if(map.containsKey(Integer.valueOf(lookupNum)) && (map.get(Integer.valueOf(lookupNum).intValue())) != i) {
-                result[0] = i;
-                result[1] = map.get(Integer.valueOf(lookupNum));
+                result[0] = nums[i];
+                result[1] = nums[map.get(Integer.valueOf(lookupNum))];
                 return result;
             }
         }
-        return result;
+        return new int[0];
     }
 
     // Time: O(n2), Space: O(1)
