@@ -40,9 +40,9 @@ package leetcode;
  * 1 <= word1.length, word2.length <= 100
  * word1 and word2 consist of lowercase English letters.
  */
-public class MergeStringsAlternately1768 {
+public class MergeStringsAlternately_1768_Leet_Easy {
     public static void main(String[] args) {
-        System.out.println(new MergeStringsAlternately1768().mergeAlternately("ab", "pqrs"));
+        System.out.println(new MergeStringsAlternately_1768_Leet_Easy().mergeAlternately("ab", "pqrs"));
     }
     public String mergeAlternately(String word1, String word2) {
         int n1 = word1.length();
