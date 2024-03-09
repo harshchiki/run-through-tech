@@ -1,5 +1,5 @@
 package dynamicprogramming;
-import java.util.*
+import java.util.*;
 
 public class CoinChangeProblem {
     public static int numberOfWaysToMakeChange(int n, int[] denoms) {
